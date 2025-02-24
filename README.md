@@ -1,6 +1,6 @@
 # Cars API
 
-Over the next three days your team will implement a DRF API for the [cars database](https://github.com/echoplatoonew/cars_database) schema.  Your goal should be to adhere to the specifications as closely as possible.  Your API should be able to perform the full range of CRUD operations.  It should be containerized.
+Over the next three days your team will implement a DRF API for the [cars database](https://github.com/Golf-Evenings-and-Weekends/cars_database) schema.  Your goal should be to adhere to the specifications as closely as possible.  Your API should be able to perform the full range of CRUD operations.  It should be containerized.
 
 Since you will have three days to work on this, it will be worth your while to do some team planning before you start writing code.  Here are some questions you might ask:
 - How long will it likely take to complete this?
