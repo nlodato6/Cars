@@ -1,6 +1,6 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import Navbar2 from './components/Navbar2'
+import NavbarNav from './components/NavbarNav'
 import Home from './pages/Home'
 import Ads from './pages/Ads'
 import Cars from './pages/Cars'
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div>
-      <Navbar2 />
+      <NavbarNav />
       <div className='flex justify-center mt-8'>
         <Routes>
           <Route path="/" element={<Home />} />

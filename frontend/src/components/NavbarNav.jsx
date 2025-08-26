@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../assets/react.svg';
 
-function Navbar2() {
+function NavbarNav() {
   return (
     <Navbar sticky='top' expand='lg' bg="dark" className="bg-blue-400" data-bs-theme="dark">
       <Container>
@@ -30,4 +30,4 @@ function Navbar2() {
   );
 }
 
-export default Navbar2;
+export default NavbarNav;
