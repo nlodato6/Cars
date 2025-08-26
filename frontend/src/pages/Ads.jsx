@@ -1,7 +1,7 @@
 function Ads() {
   return (
     <div>
-      <h1>Ads</h1>
+      <h2>Ads</h2>
     </div>
   )
 }

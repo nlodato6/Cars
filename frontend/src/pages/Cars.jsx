@@ -1,7 +1,7 @@
 function Cars() {
   return (
     <div>
-      <h1>Cars</h1>
+      <h2>Cars</h2>
     </div>
   )
 }

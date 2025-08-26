@@ -1,7 +1,7 @@
 function Models() {
   return (
     <div>
-      <h1>Models</h1>
+      <h2>Models</h2>
     </div>
   )
 }
