@@ -11,5 +11,3 @@ Since you will have three days to work on this, it will be worth your while to d
 - How do we distinguish between "core" features and "nice-to-have" features?
 
 At the end of the third day, each group will present their solutions and answer any questions that arise.
-
-
