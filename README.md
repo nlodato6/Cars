@@ -2,10 +2,12 @@
 
 ## Start Frontend App
 - cd frontend/
+- npm i
 - npm run dev
 
 ## Start Backend
 - cd backend/
+- pip install -r requirements.txt
 - ./run_compose
 - python manage.py runserver
 
