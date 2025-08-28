@@ -1,9 +1,13 @@
-function Models() {
+import ListModels from './ListModels';
+
+export default function Models() {
+
   return (
-    <div>
-      <h2>Models</h2>
+    <div className='text-center mt-8'>
+      <h1>Models List</h1>
+      {
+        <ListModels />
+      }
     </div>
   )
 }
-
-export default Models;

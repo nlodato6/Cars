@@ -11,7 +11,7 @@ class Car(models.Model):
     mileage = models.IntegerField(blank=False, default=None)
 
     class Meta:
-        ordering = ('car_id',)
+        ordering = ('car_model', 'car_id')
 
     def __str__(self):
         return f''' number_of_owners: {self.number_of_owners} | registration_number: {self.registration_number} 
