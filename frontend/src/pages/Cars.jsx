@@ -1,16 +1,12 @@
 import CarButton from "../components/CarButton";
 import CarCard from "../components/CarCard";
-
+import ListCars from "./ListCars";
 
 function Cars() {
   return (
-    <div>
+    <div className='text-center'>
       <h2>Cars</h2>
-      <CarButton />
-      <br></br>
-      <CarCard />
-
-  
+      <ListCars />
     </div>
   )
 }

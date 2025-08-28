@@ -29,12 +29,12 @@ docker cp ./init.sql backend-db-1:/tmp/init.sql
 sleep 5
 
 echo "Importing init.sql data to the database..."
-docker exec -it backend-db-1 psql -h localhost -p 5432 -U postgres -d cars_db -f /tmp/init.sql
+docker exec -it backend-db-1 psql -h localhost -p 5432 -U postgres -d cars -f /tmp/init.sql
 
 sleep 5
 
 # echo "Running script.sql query in the database..."
-docker exec -it backend-db-1 psql -h localhost -p 5432 -U postgres -d cars_db -f /tmp/script.sql
+# docker exec -it backend-db-1 psql -h localhost -p 5432 -U postgres -d cars_db -f /tmp/script.sql
 
 # Execute the Django management command to load data
 # Replace 'your_app' and 'your_fixture.json' with your actual values

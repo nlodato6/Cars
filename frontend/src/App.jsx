@@ -1,5 +1,6 @@
+"use client"
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Router, Route, Routes } from 'react-router-dom'
 import NavbarNav from './components/NavbarNav'
 import Home from './pages/Home'
 import Ads from './pages/Ads'
@@ -7,13 +8,14 @@ import Cars from './pages/Cars'
 import Models from './pages/Models'
 import Users from './pages/Users'
 import Profiles from './pages/Profiles'
+import { ErrorBoundary } from "react-error-boundary";
 
 function App() {
 
   return (
-    <div>
-      <NavbarNav />
-      <div className='flex justify-center mt-8'>
+    <>
+      <ErrorBoundary fallback={<div>Something went wrong</div>}>
+        <NavbarNav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ads" element={<Ads />} />
@@ -22,9 +24,9 @@ function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/profiles" element={<Profiles />} />
         </Routes>
-      </div>
-    </div>
+      </ErrorBoundary>
+    </>
   )
 }
 
-export default App
+export default App;

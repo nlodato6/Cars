@@ -1,6 +1,6 @@
 -- create database cars
 
-\connect cars_db
+\connect cars
 
 CREATE TABLE user_app_appuser (
 	account_id SERIAL PRIMARY KEY,
@@ -498,11 +498,11 @@ INSERT INTO user_app_appuser VALUES
 
 CREATE TABLE user_profile_app_userprofile (
 	profile_id SERIAL PRIMARY KEY,
-	account_id INT NOT NULL REFERENCES user_app_appuser(account_id),
 	street_name TEXT NOT NULL,
 	street_number TEXT NOT NULL,
 	zip_code TEXT NOT NULL,
-	city TEXT NOT NULL
+	city TEXT NOT NULL,
+	account_id INT NOT NULL REFERENCES user_app_appuser(account_id)
 );
 
 INSERT INTO user_profile_app_userprofile VALUES

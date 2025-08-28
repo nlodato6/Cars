@@ -1,9 +1,13 @@
-function Ads() {
+import ListAds from './ListAds';
+
+export default function Ads() {
+
   return (
-    <div>
-      <h2>Ads</h2>
+    <div className='text-center'>
+      <h1>Ads List</h1>
+      {
+        <ListAds />
+      }
     </div>
   )
 }
-
-export default Ads;

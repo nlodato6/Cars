@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9uegf@7q01v1!t-d=c#b8(ezjpihv^v0a(j0)fu+99%(#aejg$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "cars.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -55,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'cars_proj.urls'
+ROOT_URLCONF = 'cars.urls'
 
 TEMPLATES = [
     {
@@ -73,28 +74,20 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'cars_proj.wsgi.application'
+WSGI_APPLICATION = 'cars.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "cars_db",
+        "NAME": "cars",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        "HOST": "localhost",
-        # This is the port on the host machine (which will be mapped to 5432 in the container)
-        "PORT": 5454,
+        "HOST": "db",
+        "PORT": 5432,
     }
 }
 
