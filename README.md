@@ -14,11 +14,11 @@
 - python manage.py runserver
 
   - View the url endpoints:
-  - http://127.0.0.1:8000/api/ads/
-  - http://127.0.0.1:8000/api/cars/
-  - http://127.0.0.1:8000/api/models/
-  - http://127.0.0.1:8000/api/users/
-  - http://127.0.0.1:8000/api/profiles/
+  - http://localhost/api/ads/
+  - http://localhost/api/cars/
+  - http://localhost/api/models/
+  - http://localhost/api/users/
+  - http://localhost/api/profiles/
   
   - Run python manage.py createsuperuser to view as admin @ http://127.0.0.1:8000/admin/
   - Remember to just run, "deactivate" to stop the venv when you're done.
