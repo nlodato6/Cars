@@ -7,6 +7,8 @@
 
 ## Start Backend
 - cd backend/
+- python -m venv venv
+- source venv/bin/activate
 - pip install -r requirements.txt
 - ./run_compose
 - python manage.py runserver
@@ -19,6 +21,7 @@
   - http://127.0.0.1:8000/api/v1/user_profiles/
   
   - Run python manage.py createsuperuser to view as admin @ http://127.0.0.1:8000/admin/
+  - Remember to just run, "deactivate" to stop the venv when you're done.
   
 ## 
 
