@@ -1,5 +1,23 @@
 # Cars API
 
+## Start Frontend App
+- cd frontend/
+- npm run dev
+
+## Start Backend
+- cd backend/
+- ./run_compose
+- python manage.py runserver
+
+  - View the url endpoints:
+  - http://127.0.0.1:8000/api/v1/advertisements/
+  - http://127.0.0.1:8000/api/v1/cars/
+  - http://127.0.0.1:8000/api/v1/car_models/
+  - http://127.0.0.1:8000/api/v1/users/
+  - http://127.0.0.1:8000/api/v1/user_profiles/
+  
+  - Run python manage.py createsuperuser to view as admin @ http://127.0.0.1:8000/admin/
+  
 ## 
 
 Over the next three days your team will implement a DRF API for the [cars database](https://github.com/Golf-Evenings-and-Weekends/cars_database) schema.  Your goal should be to adhere to the specifications as closely as possible.  Your API should be able to perform the full range of CRUD operations.  It should be containerized.
