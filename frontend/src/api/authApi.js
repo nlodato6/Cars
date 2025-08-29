@@ -48,7 +48,7 @@ export async function getCars() {
     }
   }
   const body = await basicFetch("http://localhost:80/api/cars", payload)
-  // console.log('body: ', body)
+  console.log('body: ', body)
   return body
 }
 
